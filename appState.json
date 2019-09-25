@@ -1,0 +1,99 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "f8bbd6d6-3dd7-4f43-b9c1-2a17ea7e22d1": {
+        "id": "f8bbd6d6-3dd7-4f43-b9c1-2a17ea7e22d1",
+        "parent": null,
+        "name": "hiru2509test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "1d20e51b-df17-401c-8d94-bce0d4f77f4f"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru2509test"
+      },
+      "1d20e51b-df17-401c-8d94-bce0d4f77f4f": {
+        "id": "1d20e51b-df17-401c-8d94-bce0d4f77f4f",
+        "parent": "f8bbd6d6-3dd7-4f43-b9c1-2a17ea7e22d1",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru2509test/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "926df969-62bc-4722-a2d4-a3c1b0314439": {
+        "id": "926df969-62bc-4722-a2d4-a3c1b0314439",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.hiru2509testfunction = require(\"./hiru2509test/function.js\").handler;"
+      },
+      "45a687fa-3d04-4f40-8ccb-42a3b687dff8": {
+        "id": "45a687fa-3d04-4f40-8ccb-42a3b687dff8",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "f8bbd6d6-3dd7-4f43-b9c1-2a17ea7e22d1",
+    "openFiles": [
+      "1d20e51b-df17-401c-8d94-bce0d4f77f4f"
+    ],
+    "currentFileId": "1d20e51b-df17-401c-8d94-bce0d4f77f4f",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru2509test",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1569400984126
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru2509test",
+      "url": "https://github.com/HirudineeADRT/hiru2509test"
+    }
+  }
+}
